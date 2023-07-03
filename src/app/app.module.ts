@@ -8,6 +8,7 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { ContactanosComponent } from './components/contactanos/contactanos.component';
 import { AreasComponent } from './components/areas/areas.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { TestimoniosComponent } from './components/testimonios/testimonios.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     MenuBarComponent,
     ContactanosComponent,
     AreasComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TestimoniosComponent
   ],
   imports: [
     BrowserModule,
