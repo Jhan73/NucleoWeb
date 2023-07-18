@@ -1,0 +1,16 @@
+.navbar-brand{
+    color: #4A3CA6;
+    font-weight: 700;
+}
+.navbar-nav{
+    
+    font-weight: 700;
+    a{
+        color: #4A3CA6;
+    }
+}
+
+.submenu_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
