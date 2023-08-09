@@ -1,17 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { ContactanosComponent } from './components/contactanos/contactanos.component';
-import { AreasComponent } from './components/areas/areas.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+
+import { HomeComponent } from './pages/home/home.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+
+
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'contactanos', component: ContactanosComponent},
-  {path: 'areas', component: AreasComponent},
-  {path: 'testimonios', component: TestimoniosComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent},
+  { 
+    path: 'contactanos',
+    loadChildren: () => import('./site/modules/contact-us/contact-us.module').then(m => m.ContactUsModule)},
+  {
+    path: 'testimonios', 
+    loadChildren: () => import('./site/modules/testimonials/testimonials.module').then(m => m.TestimonialsModule)
+  },
+  {
+    path: 'areas',
+    loadChildren: () => import('./site/modules/areas/areas.module').then(m => m.AreasModule)
+  },
   {path: '**', component: PageNotFoundComponent},
 ];
 

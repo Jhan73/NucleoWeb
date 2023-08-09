@@ -1,28 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }from '@angular/forms'
+import { HttpClientModule }from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
-import { ContactanosComponent } from './components/contactanos/contactanos.component';
-import { AreasComponent } from './components/areas/areas.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+
+import { MenuBarComponent } from './shared/components/menu-bar/menu-bar.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+
+// mock
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { MockDataService } from './services/mock-data.service';
+import { LayoutComponent } from './layouts/layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     MenuBarComponent,
-    ContactanosComponent,
-    AreasComponent,
     PageNotFoundComponent,
-    TestimoniosComponent
+    FooterComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    InMemoryWebApiModule.forRoot(MockDataService)
   ],
   providers: [],
   bootstrap: [AppComponent]

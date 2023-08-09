@@ -1,0 +1,22 @@
+<section class="colored-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 title-container" >
+        <h3 class="title-area">ÁREA ACADÉMICA DE {{areas.sistemas.nombre}}</h3>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-3 botones">
+          <nav class="nav flex-column">
+            <a class="nav-link" aria-current="page" routerLink="organigrama" routerLinkActive="nav-active">Organigrama</a>
+            <a class="nav-link" routerLink="miembros" routerLinkActive="nav-active">Miembros</a>
+            <a class="nav-link" routerLink="estrategias" routerLinkActive="nav-active">Estrategias</a>
+            <a class="nav-link" routerLink="proyectos" routerLinkActive="nav-active">Proyectos</a>
+          </nav>
+      </div>
+      <div class="col-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</section>

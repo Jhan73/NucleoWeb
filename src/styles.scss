@@ -1,7 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
-    --font-titles: sans-serif;
-    --main-bg-color: violet;
+    --title-font-size-1: 40px; 
+    --title-font-size-2: 32px; 
+    --title-font-size-3: 24px; 
+    --title-font-size-4: 18px; 
+    --text-font-size: 16px;
+    --main-color-1: #311B92;
+    --main-color-2: #4527A0;
+    --main-color-3: #512DA8;
+    --main-color-4: #5E35B1;
+    --main-color-5: #673AB7;
+    --main-color-6: #7E57C2;
+    --main-color-7: #9575CD;
+    --main-color-8: #B39DDB;
+    --main-color-9: #D1C4E9;
+    --main-color-10: #EDE7F6;
+    --dark-color-1: #212121;
+    --dark-color-2: #424242;
+    --dark-color-3: #616161;
+    --dark-color-4: #757575;
+    --dark-color-5: #9E9E9E;
+    --dark-color-6: #BDBDBD;
+    --light-color-1: #BDBDBD;
+    --light-color-2: #EEEEEE;
+    --light-color-3: #F5F5F5;
+    --light-color-4: #FAFAFA;
+    --transparent-main-color-80: rgba(49, 27, 146, 0.8);
+    --transparent-main-color-60: rgba(49, 27, 146, 0.6);
+    --transparent-main-color-50: rgba(49, 27, 146, 0.5);
+    --transparent-main-color-20: rgba(49, 27, 146, 0.2);
+    --transparent-main-color-10: rgba(49, 27, 146, 0.1);
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+
 }
 *{
     box-sizing: border-box;
