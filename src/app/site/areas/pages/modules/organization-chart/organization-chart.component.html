@@ -1,0 +1,11 @@
+<section>
+    <p>Organigrama del area {{areaUrl}} </p>
+</section>
+<section>
+    <img [src]="area.organigrama" alt="" width="80%">
+    <ul>
+        <li *ngFor="let item of areas" >
+            {{item.area}}
+        </li>
+    </ul>
+</section>

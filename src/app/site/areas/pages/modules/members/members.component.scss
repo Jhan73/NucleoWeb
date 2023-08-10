@@ -1,0 +1,14 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: auto;
+    @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width: 1600px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

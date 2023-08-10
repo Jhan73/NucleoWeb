@@ -11,14 +11,14 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { 
     path: 'contactanos',
-    loadChildren: () => import('./site/modules/contact-us/contact-us.module').then(m => m.ContactUsModule)},
+    loadChildren: () => import('./site/contact-us/contact-us.module').then(m => m.ContactUsModule)},
   {
     path: 'testimonios', 
-    loadChildren: () => import('./site/modules/testimonials/testimonials.module').then(m => m.TestimonialsModule)
+    loadChildren: () => import('./site/testimonials/testimonials.module').then(m => m.TestimonialsModule)
   },
   {
     path: 'areas',
-    loadChildren: () => import('./site/modules/areas/areas.module').then(m => m.AreasModule)
+    loadChildren: () => import('./site/areas/areas.module').then(m => m.AreasModule)
   },
   {path: '**', component: PageNotFoundComponent},
 ];
@@ -28,3 +28,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+  
