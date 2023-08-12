@@ -13,4 +13,9 @@ export class ProjectsComponent {
   ngOnInit(): void {
     this.areaUrl = this.router.url.split('/')[2];
   }
+  isFlipped = false;
+
+  flipCard() {
+    this.isFlipped = !this.isFlipped;
+  }
 }
