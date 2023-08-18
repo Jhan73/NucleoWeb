@@ -101,294 +101,132 @@ $twitter: #1da1f2;
       border-radius: 5px;
       float: left;
       width: 100%;
-      background: linear-gradient(to bottom, var(--main-color-5), var(--dark-color-1));
-      
-      .content {
-        float: left;
-        width: 100%;
-        padding: 20px 30px 50px 30px;
-        position: relative;
-        text-align: center;
-        
-        @media (min-width: 1400px) {
-          text-align: left;
-        }
+      background: linear-gradient(to bottom, $white);
+      text-align: center; 
 
-        img {
+      .content {
           display: inline-block;
-          width: 140px;
-          border-radius: 50%;
-          
-          @media (min-width: 1400px) {
-            float: left;
-            width: 30%;
-            margin-right: 10%;
-          }
-        }
+          padding: 20px 30px 50px 30px;
+          position: relative;
+          text-align: center;
 
-        aside {
-          float: left;
-          width: 100%;
-          color: $white;
-          margin-top: 10px;
-          
           @media (min-width: 1400px) {
-            width: 60%;
+              text-align: left;
           }
-          
-          h4 {
-            margin-bottom: 10px;
-            color: var(--light-color-5);
+      }
+      
+        .profile-image {
+          img {
+              display: block;
+              margin: 0 auto; 
+              width: 100%;
+              border:#212121 solid 1px;
+              border-radius: 40px 40px 0 0;
           }
-          
-          p {
-            letter-spacing: .5px;
-            line-height: 160%;
-            color: $color-3;
-          }
-        }
-      }
-    }
-    
-    .title {
-      float: left;
-      width: 100%;
-      background-color: $color-2;
-      max-height: 0px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      overflow: hidden;
-      @include transition(all .55s);
-      
-      &.active {
-        max-height: 100px;
-        @include transition(all 1.3s);
-        
-        p {
-          @include transform(scale(1));
-          transition-delay: .2s;
-        }
-      }
-      
-      p {
-        padding: 15px 30px;
-        color: $white;
-        font-size: var(--text-font-size);
-        display: inline-block;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: .5px;
-        @include transition(all .3s);
-        @include transform(scale(0));
-      }
-    }
-    
-    button {
-      position: absolute;
-      bottom: 0;
-      right: 50%;
-      background-color: $color-3;
-      color: $color-2;
-      border: 0;
-      width: 200px;
-      height: 48px;
-      text-align: center;
-      border-radius: 30px;
-      font-size: var(--text-font-size);
-      letter-spacing: .5px;
-      text-transform: uppercase;
-      margin-bottom: -24px;
-      margin-right: -100px;
-      @include transition(all .4s);
-      transition-delay: .1s;
-      outline: none;
-      overflow: hidden;
-      z-index: 10;
-      font-family: inherit;
-      
-      span {
-        opacity: 1;
-        @include transition(opacity .2s);
-        transition-delay: .4s;
-        display: block;
-        width: 200px;
-        float: left;
-        padding: 15px 0px;
-      }
-      
-      svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        @include transform(translate(-50%, -50%));
-        opacity: 0;
-        @include transition(all .4s);
-        
-        path {
-          fill: $color-2;
-        }
-      }
-      
-      &.active {
-        margin-right: 0;
-        right: 20px;
-        width: 65px;
-        height: 65px;
-        margin-bottom: -32.5px;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        border-radius: 65px;
-        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-        
-        span {
-          opacity: 0;
-          transition-delay: 0s;
-          width: 200px;
-        }
-        
-        svg {
-          opacity: 1;
-          transition-delay: .5s;
-        }
-      }
-    }
-  }
-  
-  nav {
-    float: left;
-    width: 100%;
-    overflow: hidden;
-    max-height: 0px;
-    @include transition(all .5s);
-    
-    &.active {
-      max-height: 600px;
-      @include transition(all 1s);
-      
-      a {
-        opacity: 1;
-        @include transform(translateY(0px));
-        @include transition(all .7s);
-        
-        &:nth-of-type(1) {
-          transition-delay: .5s;
-        }
-        
-        &:nth-of-type(2) {
-          transition-delay: .7s;
-        }
-        
-        &:nth-of-type(3) {
-          transition-delay: .9s;
-        }
-      }
-    }
-    
-    a {
-      float: left;
-      width: 100%;
-      margin-top: 18px;
-      background-color: $white;
-      padding: 18px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      @include transition(all .3s);
-      opacity: 0;
-      @include transform(translateY(-10px));
-      position: relative;
-      
-      @media (min-width: 414px) {
-        padding: 18px 30px;
-      }
-      
-      .arrow {
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        @include transform(translateY(-50%));
-        
-        path {
-          fill: darken($white, 10%);
-        }
-      }
-      
-      &.gmail {
-        .icon {
-          svg {
-            background-color: $gmail;
-          }
-        }
-        
-        .content {
+        } 
+
+        .cargo {
           h1 {
-            color: $gmail;
+              background-color: var(--main-color-6);
+              color: #f8f9fa;
+              padding: 10px;
+              border-radius: 0 0 20px 20px;
           }
         }
-      }
-      
-      &.facebook {
-        .icon {
-          svg {
-            background-color: $facebook;
-          }
-        }
-        
-        .content {
-          h1 {
-            color: $facebook;
-          }
-        }
-      }
-      
-      &.twitter {
-        .icon {
-          svg {
-            background-color: $twitter;
-          }
-        }
-        
-        .content {
-          h1 {
-            color: $twitter;
-          }
-        }
-      }
-      
-      .icon {
-        float: left;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-right: 20px;
-        
-        svg {
-          width: 100%;
-          height: 100%;
-          padding: 14px;
-          
-          path {
-            fill: $white;
-          }
-        }
-      }
-      
-      .content {
-        h1 {
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 160%;
-          letter-spacing: .4px;
-        }
-        
-        span {
-          font-size: 14px;
-          color: darken($white, 30%);
-          display: block;
-          letter-spacing: .4px;
-        }
-      }
     }
+  }  
+}
+
+
+/* Estilos para la ventana modal */
+.modal {
+  top: 50%; /* Ajusta la posición vertical al centro */
+  left: 50%; /* Ajusta la posición horizontal al centro */
+  transform: translate(-50%, -50%);
+  background-color: #52525218;
+  max-width: 70%;
+  max-height: 60%;
+  @media (min-width: 1400px) {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 30%; /* Ajusta el ancho deseado para la ventana modal en pantallas grandes */
+    max-width: 800px;
+    height: 60%; /* Ajusta la altura deseada para la ventana modal en pantallas grandes */
+    max-height: 600px;
   }
 }
+
+  .modal-content {
+    background-color: var(--main-color-2);
+    border-radius: 20px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height:90%;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+
+    @media (min-width: 1400px) {
+      .image-container {
+        flex: 1; /* Ajusta el valor de flex para cambiar la proporción en pantallas grandes */
+      }
+  
+      .images-aside {
+        flex: 1; /* Ajusta el valor de flex para cambiar la proporción en pantallas grandes */
+      }
+    }
+  }
+    .image{
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image-container {
+      flex: 2;
+      display:flex;
+      align-items: flex-start;
+      img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+      }
+    }
+
+    .images-aside {
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+      .images-aside img {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+
+    .profile-info {
+      padding: 0 10px;
+      h3{
+        color:#f8f9fa;
+        margin-bottom: 10px;
+        }
+
+      hr{
+        margin: 15px 0;
+        border-top: 10px solid #f8f9fa;
+        }
+
+      p{
+        color:#f8f9fa;
+        margin-bottom: 5px;
+        }
+    }
+
