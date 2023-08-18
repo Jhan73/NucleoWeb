@@ -392,3 +392,30 @@ $twitter: #1da1f2;
     }
   }
 }
+.modal-content{
+  background-color: #3B1B75;
+  border-radius: 15px;
+}
+#contenidoimg{
+  width: 200px;
+  height: 230px;
+  text-align: center;
+  background-color: #9D81D6;
+  margin: 10px;
+  border-radius: 20px;
+}
+.modal-body{
+  text-align: center;
+  color: #ffffff;
+}
+.modal-footer{
+  text-align: center;
+  color: #ffffff;
+}
+#imgmodal-logo{
+  position: relative;
+  bottom: 230px;
+  left: 320px;
+  width: 100px;
+  height: 100px;
+}

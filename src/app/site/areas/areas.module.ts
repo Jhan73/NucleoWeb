@@ -19,7 +19,7 @@ import { ProjectsComponent } from './pages/modules/projects/projects.component';
 import { MemberComponent } from './components/member/member.component';
 import { ProjectComponent } from './components/project/project.component';
 import { AreaComponent } from './components/area/area.component';
-
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +40,7 @@ import { AreaComponent } from './components/area/area.component';
     MemberComponent,
     ProjectComponent,
     AreaComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
