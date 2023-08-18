@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-    --title-font-size-1: 40px; 
-    --title-font-size-2: 32px; 
-    --title-font-size-3: 24px; 
-    --title-font-size-4: 20px; 
+:root {
+    --title-font-size-1: 40px;
+    --title-font-size-2: 32px;
+    --title-font-size-3: 24px;
+    --title-font-size-4: 20px;
     --text-font-size: 16px;
     /*
     --main-color-1: #7052ff;
@@ -13,7 +13,7 @@
     --main-color-5: #bfb6ff;
     --main-color-6: #d3ceff;
     --main-color-7: #e8e6ff;*/
-    
+
     --main-color-1: #311B92;
     --main-color-2: #4527A0;
     --main-color-3: #512DA8;
@@ -30,6 +30,7 @@
     --dark-color-4: #757575;
     --dark-color-5: #9E9E9E;
     --dark-color-6: #BDBDBD;
+    --light-color-0: #FFFFFF;
     --light-color-1: #BDBDBD;
     --light-color-2: #EEEEEE;
     --light-color-3: #F5F5F5;
@@ -39,42 +40,65 @@
     --transparent-main-color-50: rgba(49, 27, 146, 0.5);
     --transparent-main-color-20: rgba(49, 27, 146, 0.2);
     --transparent-main-color-10: rgba(49, 27, 146, 0.1);
+    --shadow-main-color-1: 0 4px 6px rgba(33, 33 33, 0.5);
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
+    /*strategies*/
+    --card-strategies: #e8eaf6;
+    --h2-strategies: #3B1B75;
+    --circule-strategies: #1A237E;
 
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif, Verdana, 'Segoe UI', Tahoma;
 }
 
-h1{
+h1 {
     font-size: var(--title-font-size-1);
 }
-h2{
+
+h2 {
     font-size: var(--title-font-size-2);
 }
-h3{
+
+h3 {
     font-size: var(--title-font-size-3);
 }
-h4{
+
+h4 {
     font-size: var(--title-font-size-4);
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--main-color-1);
     font-weight: 700;
 }
 
-p, ul, li, ol, a, span, label, i{
+p,
+ul,
+li,
+ol,
+a,
+span,
+label,
+i {
     font-size: var(--text-font-size);
     font-weight: 500;
 }
-a{
+
+a {
     text-decoration: none;
 }
