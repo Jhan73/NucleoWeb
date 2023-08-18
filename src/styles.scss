@@ -5,16 +5,16 @@
     --title-font-size-3: 24px; 
     --title-font-size-4: 20px; 
     --text-font-size: 16px;
-    /*
-    --main-color-1: #7052ff;
-    --main-color-2: #846dff;
-    --main-color-3: #9886ff;
-    --main-color-4: #ab9eff;
-    --main-color-5: #bfb6ff;
-    --main-color-6: #d3ceff;
-    --main-color-7: #e8e6ff;*/
     
-    --main-color-1: #311B92;
+    --main-color-1: #4a3ca6;
+    /*--main-color-2: #6659b6;
+    --main-color-3: #8075c6;
+    --main-color-4: #9b93d5;
+    --main-color-5: #b6b1e4;
+    --main-color-6: #d3d0f2;
+    --main-color-7: #f0efff;*/
+    
+    //--main-color-1: #311B92;
     --main-color-2: #4527A0;
     --main-color-3: #512DA8;
     --main-color-4: #5E35B1;
@@ -69,6 +69,7 @@ h4{
 h1, h2, h3, h4, h5, h6{
     color: var(--main-color-1);
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 p, ul, li, ol, a, span, label, i{
@@ -77,4 +78,7 @@ p, ul, li, ol, a, span, label, i{
 }
 a{
     text-decoration: none;
+}
+body{
+    background: var(--main-color-10);
 }

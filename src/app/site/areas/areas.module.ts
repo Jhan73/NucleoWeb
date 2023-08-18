@@ -19,6 +19,7 @@ import { ProjectsComponent } from './pages/modules/projects/projects.component';
 import { MemberComponent } from './components/member/member.component';
 import { ProjectComponent } from './components/project/project.component';
 import { AreaComponent } from './components/area/area.component';
+import { AreasComponent } from './pages/areas/areas.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { AreaComponent } from './components/area/area.component';
     MemberComponent,
     ProjectComponent,
     AreaComponent,
+    AreasComponent,
   ],
   imports: [
     CommonModule,

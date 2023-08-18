@@ -14,14 +14,16 @@ import { GthComponent } from './pages/gth/gth.component';
 import { MarketingComponent } from './pages/marketing/marketing.component';
 import { LogisticaComponent } from './pages/logistica/logistica.component';
 import { RrppComponent } from './pages/rrpp/rrpp.component';
+import { AreasComponent } from './pages/areas/areas.component';
 
 
 const routes: Routes = [
+  { path: '', component: AreasComponent},
   {
     path: 'pmo',
     component: PmoComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
@@ -33,7 +35,7 @@ const routes: Routes = [
     path: 'investigacion',
     component: InvestigacionComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
@@ -45,7 +47,7 @@ const routes: Routes = [
     path: 'industrial',
     component: IndustrialComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
@@ -57,7 +59,7 @@ const routes: Routes = [
     path: 'sistemas',
     component: SitemasComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
@@ -69,7 +71,7 @@ const routes: Routes = [
     path: 'gth',
     component: GthComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
@@ -81,7 +83,7 @@ const routes: Routes = [
     path: 'marketing',
     component: MarketingComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
@@ -93,7 +95,7 @@ const routes: Routes = [
     path: 'logistica',
     component: LogisticaComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
@@ -105,7 +107,7 @@ const routes: Routes = [
     path: 'rrpp',
     component: RrppComponent,
     children: [
-      {path: '', redirectTo: 'organigrama', pathMatch: 'full'},
+      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
       {path: 'organigrama', component: OrganizationChartComponent},
       {path: 'miembros', component: MembersComponent},
       {path: 'estrategias', component: StrategiesComponent},
