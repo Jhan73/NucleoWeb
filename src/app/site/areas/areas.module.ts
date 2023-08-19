@@ -15,11 +15,11 @@ import { AreaContentComponent } from './components/area-content/area-content.com
 import { OrganizationChartComponent } from './pages/modules/organization-chart/organization-chart.component';
 import { MembersComponent } from './pages/modules/members/members.component';
 import { StrategiesComponent } from './pages/modules/strategies/strategies.component';
-import { ProjectsComponent } from './pages/modules/projects/projects.component';
 import { MemberComponent } from './components/member/member.component';
-import { ProjectComponent } from './components/project/project.component';
 import { AreaComponent } from './components/area/area.component';
 import { AreasComponent } from './pages/areas/areas.component';
+import { ActivityComponent } from './components/activity/activity.component';
+import { ActivitiesComponent } from './pages/modules/activities/activities.component';
 
 
 @NgModule({
@@ -37,11 +37,11 @@ import { AreasComponent } from './pages/areas/areas.component';
     OrganizationChartComponent,
     MembersComponent,
     StrategiesComponent,
-    ProjectsComponent,
     MemberComponent,
-    ProjectComponent,
     AreaComponent,
     AreasComponent,
+    ActivityComponent,
+    ActivitiesComponent,
   ],
   imports: [
     CommonModule,
