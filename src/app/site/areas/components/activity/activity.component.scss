@@ -25,15 +25,15 @@
             .btn{
                 border: none;
                 border-radius: 10px;
+                color: var(--bs-light);
             }
             .btn-more{
                 background-color: var(--secondary-color-4);
-                color: var(--secondary-color-1);
                 font-weight: bold;
             }
             .btn-active{
                 background-color: var(--secondary-color-1);
-                color: var(--light-color-4);
+                
             }
         }
     }

@@ -1,9 +1,9 @@
 /* Diseño de la tarjeta mision y vision*/
 h1 {
     font-size: var(--title-font-size-1);
-    color: var(--h2-strategies);
+    color: var(--bs-light);
     margin-bottom: 50px;
-    text-shadow: var(-shadow-main-color-1);
+    text-shadow: var(--shadow-main-color-1);
 }
 
 .container {
@@ -18,7 +18,7 @@ h1 {
 }
 
 .card {
-    background-color: var(--light-color-1);
+    background-color: var(--dark-color-7);
     margin-left: auto;
     margin-right: auto;
     width: calc(50% - 20px);
@@ -69,13 +69,12 @@ h1 {
 
 .card-front h1 {
     font-size: var(--title-font-size-1);
-    color: var(--light-color-0);
     margin-top: 30px;
-    text-shadow: var(-shadow-main-color-1);
+    text-shadow: var(--shadow-main-color-1);
 }
 
 .card-back {
-    background-color: var(-card-strategies);
+    //background-color: var(--card-strategies);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -89,7 +88,7 @@ h1 {
     margin: 30px;
     /* Añade un margen alrededor del contenido */
     font-size: var(--title-font-size-3);
-    color: var(--light-color-0);
+    color: var(--main-color-1);
     /* Cambia el color del texto a blanco */
 }
 
@@ -170,7 +169,7 @@ h1 {
     height: 60px;
     border-radius: 50%;
     background-color: var(--circule-strategies);
-    color: var(--light-color-0);
+    color: var(--bs-light);
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -182,7 +181,7 @@ h1 {
 }
 
 .number {
-    color: var(--light-color-0);
+    color: var(--bs-light);
     font-size: 30px;
 }
 
@@ -202,7 +201,7 @@ h1 {
     margin: 30px;
     /* Añade un margen alrededor del contenido */
     font-size: var(--title-font-size-3);
-    color: var(--dark-color-0);
+    color: var(--main-color-1);
     /* Cambia el color del texto a blanco */
 }
 
