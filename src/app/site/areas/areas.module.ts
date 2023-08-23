@@ -15,11 +15,16 @@ import { AreaContentComponent } from './components/area-content/area-content.com
 import { OrganizationChartComponent } from './pages/modules/organization-chart/organization-chart.component';
 import { MembersComponent } from './pages/modules/members/members.component';
 import { StrategiesComponent } from './pages/modules/strategies/strategies.component';
-import { ProjectsComponent } from './pages/modules/projects/projects.component';
 import { MemberComponent } from './components/member/member.component';
-import { ProjectComponent } from './components/project/project.component';
 import { AreaComponent } from './components/area/area.component';
+<<<<<<< HEAD
 import { ModalComponent } from './components/modal/modal.component';
+=======
+import { AreasComponent } from './pages/areas/areas.component';
+import { ActivityComponent } from './components/activity/activity.component';
+import { ActivitiesComponent } from './pages/modules/activities/activities.component';
+
+>>>>>>> main
 
 @NgModule({
   declarations: [
@@ -36,11 +41,15 @@ import { ModalComponent } from './components/modal/modal.component';
     OrganizationChartComponent,
     MembersComponent,
     StrategiesComponent,
-    ProjectsComponent,
     MemberComponent,
-    ProjectComponent,
     AreaComponent,
+<<<<<<< HEAD
     ModalComponent
+=======
+    AreasComponent,
+    ActivityComponent,
+    ActivitiesComponent,
+>>>>>>> main
   ],
   imports: [
     CommonModule,

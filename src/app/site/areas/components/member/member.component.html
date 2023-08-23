@@ -1,52 +1,47 @@
-<div class="member-area">
+<section class="member-section">
     <div class="member">
-        <main>
-            <section>
-                <div class="content">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
-        
-                    <aside>
-                        <h4>Riccardo Cavallo</h4>
-                        <p>Hola, soy Riccardo Cavallo y soy diseñador gráfico y visual.</p>
-                    </aside>
-                    
-                    <button data-bs-toggle="modal" data-bs-target="#modal-miembro">
-                            <span>Ampliar</span>
-                    </button>
-                </div>
-            </section>
-            
-        </main>
-        
-    </div>
-</div>
-<div class="modal fade" id="modal-miembro" >
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="btn-close" data-bs-dismiss="modal"></button>
+        <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="perfil">
+            <div class="perfil_imagen-container">
+                <img class="perfil_imagen" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image">
             </div>
-            <div class="modal-body" >
-                <div id="contenidoimg">
-                    <img src="https://img.freepik.com/vector-premium/icono-vector-imagen-sobre-fondo-blanco-icono-imagen-lineal-diseno-impresion_820464-379.jpg" alt="imagen del miembro" width="100%" height="200px" style="border-top-left-radius: 20PX;border-top-right-radius: 20px;">
-                    <h5>CARGO</h5>
-                </div>
-                <div id="imgmodal-logo">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKPn41DeukWOt7d1MMAbMxwcXzWfb4Ip5d1pP-2Afy_veNF4VPk8zafUKE84UVycdZmjU&usqp=CAU" alt="logo de nucleo" width="100%" height="100%">
-                </div>
-                
-                <p >
-                    nombre1 nombre2 <br>
-                    apellido1 apellido2
-                </p>
+            <div class="job_title">
+                <h3>Cargo</h3>
             </div>
-            <div class="modal-footer">
-                <p>
-                 Project intern, Ex-prresidente de 
-                 Nucleo, 8vo ciclo, Ingenieria 
-                 Indusrial, Curioso del mundo
-                </p>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="header">
+                        <div class="perfil">
+                            <div class="perfil_imagen-container">
+                                <img class="perfil_imagen" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/_mLIxaKY_400x400.jpg" alt="Profile Image" >
+                            </div>
+                            <div  class="job_title">
+                                <h3>Cargo</h3>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <img src="./assets/images/nucleo.jpeg" alt="">
+                            <div class="social">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Juanito Segismundo</h4>
+                        <h4>Alcachofa Matsumoto</h4>
+                        <hr>
+                        <p>
+                            Project intern, Ex-presidente de Nucleo, 8vo ciclo, Ingeniería Industrial, Mentor, Curioso del mundo
+                        </p>
+                    </div>
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
         </div>
     </div>
-</div> 
+</section>
+

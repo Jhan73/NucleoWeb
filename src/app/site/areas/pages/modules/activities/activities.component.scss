@@ -1,0 +1,16 @@
+section{
+    margin: 50px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    @media (min-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+        .activity{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media (min-width: 1300px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
