@@ -1,0 +1,88 @@
+.contacto-principal {
+    background: #d1c4e9;
+
+    .formulario {
+        margin: 0 0 2% 5%;
+        font-size: 18px;
+        padding: 30px;
+        background-color: #d1c4e9;
+        border-radius: 10px;
+
+        .form-label {
+            color: #48008b;
+            font-weight: 550px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .input-padron {
+            display: block;
+            padding: 8px;
+            padding-left: 20px;
+        }
+
+        .form-control {
+            border-radius: 20px;
+        }
+
+        .form-required {
+            color: rgb(36, 0, 77);
+            font-size:large;
+            font-family:monospace;
+        }
+
+        .form-condiciones {
+            .form-label {
+                color: #48008b;
+                font-weight: 550px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            } 
+
+            .radio {
+                display: block;
+                margin: 5px;
+                font-size:18px;
+            }           
+        }
+
+        .enviar {
+            background: #4A3CA6;;
+            color: #FFF;
+            font-size:25px;
+            font-weight:bold;
+            border: none;
+            padding: 5px 70px;
+            border-radius: 30px;
+            margin-bottom: 10px
+        }
+    }
+}
+
+.btn-area{
+    background-color: rgb(64, 20, 118, 0.5);
+    color: #ffffff;
+    margin: 7% 0;
+    border-radius: 0  30px 30px  0;
+}
+
+.btn-area:hover{
+    background-color: rgb(64, 20, 118);
+    color: #ffffff;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+act-title {
+    background: #000080;
+    padding:10px ;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+    font-size:5em;
+    font-weight:bold;
+    font-family: 'Raleway';
+    font-style: normal;
+    text-align:center;
+    letter-spacing: 0.1em;
+    display:flex;
+}

@@ -17,14 +17,11 @@ import { MembersComponent } from './pages/modules/members/members.component';
 import { StrategiesComponent } from './pages/modules/strategies/strategies.component';
 import { MemberComponent } from './components/member/member.component';
 import { AreaComponent } from './components/area/area.component';
-<<<<<<< HEAD
-import { ModalComponent } from './components/modal/modal.component';
-=======
 import { AreasComponent } from './pages/areas/areas.component';
 import { ActivityComponent } from './components/activity/activity.component';
 import { ActivitiesComponent } from './pages/modules/activities/activities.component';
 
->>>>>>> main
+
 
 @NgModule({
   declarations: [
@@ -43,13 +40,9 @@ import { ActivitiesComponent } from './pages/modules/activities/activities.compo
     StrategiesComponent,
     MemberComponent,
     AreaComponent,
-<<<<<<< HEAD
-    ModalComponent
-=======
     AreasComponent,
     ActivityComponent,
     ActivitiesComponent,
->>>>>>> main
   ],
   imports: [
     CommonModule,

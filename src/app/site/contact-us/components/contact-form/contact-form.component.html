@@ -1,1 +1,29 @@
-<p>contact-form works!</p>
+<div class="container-fluid">
+    <div class="row contacto-principal">
+        <form class="col formulario">
+            <label class="form-title form-label" for="nombre-apellido">Correo *:</label>
+            <input type="text" id="nombre-apellido" class="input-padron form-control" placeholder="name@ejemplo.com" required>
+            
+            <label class="form-title form-label" for="correo-electronico">Nombre *:</label>
+            <input type="email" id="correo-electronico" class="input-padron form-control" required>
+
+            <label class="form-title form-label" for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" class="input-padron form-control" required>
+          
+            <label class="form-title form-label" for="mensaje">Mensaje *:</label>
+            <textarea name="" id="mensaje" cols="60" rows="10" class="input-padron form-control" required></textarea>
+            
+            <small class="form-text form-required"> (*) Campo obligatorio</small>
+            <div class="row mb-0 form-condiciones">
+                <label class="radio form-label"><input type="radio">Términos y condiciones</label>
+                <label class="radio form-label"><input type="radio">Términos de uso</label>
+            </div>
+            <div class="col text-center">
+                <input type="submit" value="Enviar" class="enviar">
+            </div>
+        </form>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="../../../assets/images/dino.png" alt="Imagen">
+        </div>
+    </div>
+</div>
