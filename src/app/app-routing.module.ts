@@ -20,6 +20,14 @@ const routes: Routes = [
     path: 'areas',
     loadChildren: () => import('./site/areas/areas.module').then(m => m.AreasModule)
   },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./site/events/events.module').then(m => m.EventsModule)
+  },
+  {
+    path: 'proyectos',
+    loadChildren: () => import('./site/projects/projects.module').then(m => m.ProjectsModule)
+  },
   {path: '**', component: PageNotFoundComponent},
 ];
 

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class MembersComponent {
   areaUrl = ''
+  nombre = 'Jhan'
   constructor(private router: Router) {}
 
   ngOnInit(): void {
@@ -15,3 +16,4 @@ export class MembersComponent {
   }
 
 }
+
