@@ -1,17 +1,19 @@
 .contacto-principal {
-    background: #d1c4e9;
+    background: var(--main-color-7);
 
     .formulario {
         margin: 0 0 2% 5%;
         font-size: 18px;
         padding: 30px;
-        background-color: #d1c4e9;
+        background-color: var(--smain-color-7);
         border-radius: 10px;
 
         .form-label {
-            color: #48008b;
-            font-weight: 550px;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: var(--text-font-size);
+            font-weight: 500;
+            margin: 0;
+            color:  var(--main-color-1);
+            font-size: bold;
         }
 
         .input-padron {
@@ -25,16 +27,16 @@
         }
 
         .form-required {
-            color: rgb(36, 0, 77);
-            font-size:large;
-            font-family:monospace;
+            color: var(--main-color-1);
+            font-size: var(--text-font-size);
         }
 
         .form-condiciones {
             .form-label {
-                color: #48008b;
-                font-weight: 550px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: var(--main-color-1);
+                font-weight: 500;
+                margin: 0;
+                font-size: var(--text-font-size);
             } 
 
             .radio {
@@ -45,10 +47,10 @@
         }
 
         .enviar {
-            background: #4A3CA6;;
-            color: #FFF;
-            font-size:25px;
-            font-weight:bold;
+            background: var(--bs-info);;
+            color: var(--dark-color-7);
+            font-size: var(--title-font-size-3);
+            font-weight: bold;
             border: none;
             padding: 5px 70px;
             border-radius: 30px;

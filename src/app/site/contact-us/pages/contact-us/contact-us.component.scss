@@ -1,6 +1,6 @@
 .imagen-contacto {
     height: 150px;
-    background-color: rgb(112, 42, 168);
+    background-color: var(--main-color-1);
     justify-content: center;
     align-items: center;
     img {
@@ -10,11 +10,12 @@
 
     h1 {
         font-weight: bold;
-        color: #fff;
+        font-size: var(--title-font-size-1);
+        color: var(--main-color-7);
         
     }
 }
 
 .contenido-contacto {
-    background-color: #d1c4e9;
+    background-color: var(--main-color-7);
 }
