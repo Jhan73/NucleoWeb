@@ -22,6 +22,7 @@ import { ActivityComponent } from './components/activity/activity.component';
 import { ActivitiesComponent } from './pages/modules/activities/activities.component';
 
 
+
 @NgModule({
   declarations: [
     SitemasComponent,

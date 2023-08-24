@@ -1,0 +1,74 @@
+.container-fluid {
+    background-color: var(--main-color-7);
+
+    .mapa {
+        margin-top: 5%;
+        padding-left: 5%;
+    }
+
+    .informacion-contacto {
+        margin: 5% 5% 3% 5%;
+        text-align: center;
+
+        .info-ubicanos {
+            .info-principal {
+                font-size: var(--title-font-size-2);
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 10px;
+                color: var(--main-color-1);
+            }
+
+            .info-descripcion{
+                font-style: normal;
+                font-size: var(--title-font-size-4);
+                color: var(--main-color-4);
+            } 
+        }
+
+        .info-telefonia {
+            .info-principal {
+                font-size: var(--title-font-size-2);
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 10px;
+                color: var(--main-color-1);
+
+                i {
+                    color: var(--bs-danger);
+                    font-size: var(--title-font-size-2);
+                }
+            }
+
+            .info-descripcion{
+                font-style: normal;
+                font-size: var(--title-font-size-4);
+                color: var(--main-color-4);
+            } 
+        }
+
+        .info-correo {
+            .info-principal {
+                font-size: var(--title-font-size-2);
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 10px;
+                color: var(--main-color-1);
+
+                i {
+                    color: var(--main-color-2);
+                    font-size: var(--title-font-size-2);    
+                }
+            }
+
+            .info-descripcion{
+                font-style: normal;
+                font-size: var(--title-font-size-4);
+                color: var(--main-color-4);
+            } 
+        }
+    }
+
+}
+
+
