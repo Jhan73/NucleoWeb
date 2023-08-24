@@ -20,6 +20,7 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
+
   ],
   imports: [
     SharedModule,
