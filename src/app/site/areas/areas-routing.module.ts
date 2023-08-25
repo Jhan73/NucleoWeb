@@ -15,6 +15,7 @@ import { LogisticaComponent } from './pages/logistica/logistica.component';
 import { RrppComponent } from './pages/rrpp/rrpp.component';
 import { AreasComponent } from './pages/areas/areas.component';
 import { ActivitiesComponent } from './pages/modules/activities/activities.component';
+import { ActivityDetailsComponent } from 'src/app/shared/pages/activity-details/activity-details.component';
 
 
 const routes: Routes = [
@@ -23,96 +24,104 @@ const routes: Routes = [
     path: 'pmo',
     component: PmoComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
   {
     path: 'investigacion',
     component: InvestigacionComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
   {
     path: 'industrial',
     component: IndustrialComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
   {
     path: 'sistemas',
     component: SitemasComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
   {
     path: 'gth',
     component: GthComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
   {
     path: 'marketing',
     component: MarketingComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
   {
     path: 'logistica',
     component: LogisticaComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
   {
     path: 'rrpp',
     component: RrppComponent,
     children: [
-      {path: '', redirectTo: 'estrategias', pathMatch: 'full'},
-      {path: 'organigrama', component: OrganizationChartComponent},
-      {path: 'miembros', component: MembersComponent},
-      {path: 'estrategias', component: StrategiesComponent},
-      {path: 'activities', component: ActivitiesComponent},
-      {path: '**', component: PageNotFoundComponent},
+      { path: '', redirectTo: 'estrategias', pathMatch: 'full' },
+      { path: 'organigrama', component: OrganizationChartComponent },
+      { path: 'miembros', component: MembersComponent },
+      { path: 'estrategias', component: StrategiesComponent },
+      { path: 'activities', component: ActivitiesComponent },
+      { path: 'activities/activity', component: ActivityDetailsComponent },
+      { path: '**', component: PageNotFoundComponent },
     ]
   },
 ];

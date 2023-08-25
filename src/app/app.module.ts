@@ -14,13 +14,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { MockDataService } from './services/mock-data.service';
 import { SharedModule } from './shared/shared.module';
+import { ActivityComponent } from './shared/components/activity/activity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
-
   ],
   imports: [
     SharedModule,
@@ -30,6 +30,8 @@ import { SharedModule } from './shared/shared.module';
     FormsModule,
     HttpClientModule,
     InMemoryWebApiModule.forRoot(MockDataService)
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]

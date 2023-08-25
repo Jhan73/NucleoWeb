@@ -18,8 +18,8 @@ import { StrategiesComponent } from './pages/modules/strategies/strategies.compo
 import { MemberComponent } from './components/member/member.component';
 import { AreaComponent } from './components/area/area.component';
 import { AreasComponent } from './pages/areas/areas.component';
-import { ActivityComponent } from './components/activity/activity.component';
 import { ActivitiesComponent } from './pages/modules/activities/activities.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -41,12 +41,12 @@ import { ActivitiesComponent } from './pages/modules/activities/activities.compo
     MemberComponent,
     AreaComponent,
     AreasComponent,
-    ActivityComponent,
     ActivitiesComponent,
   ],
   imports: [
     CommonModule,
-    AreasRoutingModule
+    AreasRoutingModule,
+    SharedModule,
   ]
 })
 export class AreasModule { }
