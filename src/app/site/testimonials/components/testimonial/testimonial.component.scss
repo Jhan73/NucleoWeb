@@ -1,0 +1,163 @@
+.main-card {
+    .main-card-content {
+        height: auto;
+        width: auto;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-content {
+        position: relative;
+        background-color:var(--h2-strategies);
+        color:var(--main-color-7);
+
+        .date-container-inside-card {
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            padding: 5px 10px;
+            border-bottom-right-radius: 10px;
+            white-space: nowrap;
+        }
+        
+        hr.hr-card {
+            margin-top: 25px; 
+            
+            border-width:5px;
+        }
+
+        .date {
+            margin: 0;
+        }
+    }
+    .circular-image {
+        padding: auto;
+        margin-left: 20px;
+
+        width: 200px;
+        height: 150px;
+        border-radius: 50%;
+        border: 6px solid var(--main-color-5);
+        overflow: hidden;
+      
+        img.perfil_imagen {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .card-info{
+        position:relative;
+        text-align: right;
+        margin-left: auto;
+        margin-right:20px;
+        
+        
+        @media screen and (min-width: 400px) {
+            margin-left: 25px;
+        }
+
+        i.fa-quote-left {
+            position: absolute;
+            top: 95%; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            font-size: 35px;
+            color: black;
+        }
+    
+
+    .card-title{
+        margin-bottom: 2px;
+        text-align: center;
+        color:var(--main-color-7);
+        @media screen and (min-width: 1400px) {
+            margin-left: 30px;
+            font-size:30px;
+        }
+    }
+    .card-description {
+        margin-bottom: 18px; 
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        color:var(--main-color-7);
+        @media screen and (min-width: 1400px) {
+            margin-left: 30px;
+            font-size:20px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+    }
+    
+    .card-text {
+        margin-bottom: 15px; 
+        text-align: center;
+        color:var(--main-color-7);
+        font-weight: 400;
+        word-wrap: break-word; 
+        max-width: 400px;
+        @media screen and (min-width: 1400px) {
+            margin-left: 30px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    }
+    
+    .personal-info {
+        margin-left: 8px;
+        margin-top: 10px;
+        .card-link {
+            margin-right: 0rem;
+            background-color: var(--h2-strategies);
+            color:var(--main-color-5);
+        }
+
+        .fa {
+            font-size: 25px; 
+        }
+    
+        @media screen and (min-width: 1400px) {
+            .fa {
+                font-size: 30px;
+            }
+        }
+
+    }
+    
+    .color-rectangles {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 0px;
+        margin-top: auto; 
+    }
+
+    .rectangle {
+        width: 55px;
+        height: 13px;
+        flex-shrink: 0;
+        @media screen and (min-width: 1400px) {
+            width: 100px;
+            height: 20px;
+        }
+    }
+
+    .color1 {
+        background-color: var(--circule-strategies);
+    }
+
+    .color2 {
+        background-color: var(--main-color-5);
+    }
+
+    .color3 {
+        background-color: var(--circule-strategies);
+    }
+}
