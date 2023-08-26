@@ -1,0 +1,35 @@
+.testimony-page{
+    background-color: var(--main-color-7);
+}
+
+.testimony-title {
+    background: var(--secondary-color-1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:var(--main-color-7);
+}
+
+.section {
+    margin: 70px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+
+    .individual-testimony {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    @media (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr; 
+        gap: 50px; 
+    }
+
+    @media (min-width: 1300px) {
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 80px; 
+    }
+}

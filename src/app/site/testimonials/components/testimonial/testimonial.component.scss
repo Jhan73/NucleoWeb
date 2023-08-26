@@ -1,45 +1,31 @@
-.colored-section{
-    background-color: var(--main-color-7);
-}
-
-
-.testimony-title {
-    background: var(--secondary-color-1);
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
 .main-card {
-    padding: 2% 25%;
     .main-card-content {
         height: auto;
         width: auto;
 
         display:flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .card-content {
         position: relative;
         background-color:var(--h2-strategies);
-        
+        color:var(--main-color-7);
+
         .date-container-inside-card {
             position: absolute;
             top: 0;
             left: 0;
-            color:#fff;
+            
             padding: 5px 10px;
-            font-size: 14px;
             border-bottom-right-radius: 10px;
             white-space: nowrap;
         }
-
         
         hr.hr-card {
             margin-top: 25px; 
-            color:#fff;
+            
             border-width:5px;
         }
 
@@ -54,16 +40,9 @@
         width: 200px;
         height: 150px;
         border-radius: 50%;
-        border: 4px solid var(--main-color-5);
+        border: 6px solid var(--main-color-5);
         overflow: hidden;
-        @media screen and (max-width: 1300px) {
-            width: 250px;
-            height: 120px;
-        }
-        @media screen and (min-width: 1400px) {
-            width: 250px;
-            height: 250px;
-        }
+      
         img.perfil_imagen {
             width: 100%;
             height: 100%;
@@ -76,6 +55,11 @@
         text-align: right;
         margin-left: auto;
         margin-right:20px;
+        
+        
+        @media screen and (min-width: 400px) {
+            margin-left: 25px;
+        }
 
         i.fa-quote-left {
             position: absolute;
@@ -85,15 +69,12 @@
             font-size: 35px;
             color: black;
         }
-        @media screen and (min-width: 400px) {
-            margin-left: 25px;
-        }
-    }
+    
 
     .card-title{
         margin-bottom: 2px;
         text-align: center;
-        color:#fff;
+        color:var(--main-color-7);
         @media screen and (min-width: 1400px) {
             margin-left: 30px;
             font-size:30px;
@@ -105,7 +86,7 @@
         font-size: 14px;
         letter-spacing: 1px;
         font-weight: 300;
-        color:#fff;
+        color:var(--main-color-7);
         @media screen and (min-width: 1400px) {
             margin-left: 30px;
             font-size:20px;
@@ -117,7 +98,7 @@
     .card-text {
         margin-bottom: 15px; 
         text-align: center;
-        color:#fff;
+        color:var(--main-color-7);
         font-weight: 400;
         word-wrap: break-word; 
         max-width: 400px;
@@ -127,25 +108,27 @@
             font-weight: 500;
         }
     }
+    }
+    
     .personal-info {
         margin-left: 8px;
         margin-top: 10px;
         .card-link {
             margin-right: 0rem;
-            background-color: #fff;
+            background-color: var(--h2-strategies);
+            color:var(--main-color-5);
+        }
+
+        .fa {
+            font-size: 25px; 
         }
     
-        .linkedin {
-            color: #0077b5; 
+        @media screen and (min-width: 1400px) {
+            .fa {
+                font-size: 30px;
+            }
         }
-    
-        .github {
-            color: black; 
-        }
-    
-        .youtube {
-            color: #ff0000;  
-        }
+
     }
     
     .color-rectangles {
@@ -176,32 +159,5 @@
 
     .color3 {
         background-color: var(--circule-strategies);
-    }
-}
-
-
-.col-md-6.tarjeta{
-    .main-card{
-        .circular-image{
-            width: 180px;
-            height: 120px;
-            @media screen and (min-width: 1400px) {
-                width: 250px;
-                height: 250px;
-            }
-        }
-        .color-rectangles {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            gap: 0px;
-            margin-top: auto; 
-        }
-    
-        .rectangle {
-            width: 55px;
-            height: 13px;
-            flex-shrink: 0;
-            }
     }
 }
