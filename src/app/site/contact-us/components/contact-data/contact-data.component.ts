@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact-data',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-data.component.scss']
 })
 export class ContactDataComponent {
-
+  @Input() data?: {location: string, classroom: string, phone: string, email: string} 
 }

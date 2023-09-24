@@ -5,6 +5,9 @@ import { ContactacUsRoutingModule } from './contact-us-routing.module';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ContactDataComponent } from './components/contact-data/contact-data.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -15,7 +18,9 @@ import { ContactDataComponent } from './components/contact-data/contact-data.com
   ],
   imports: [
     CommonModule,
-    ContactacUsRoutingModule
+    ContactacUsRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
   ]
 })
 export class ContactUsModule { }

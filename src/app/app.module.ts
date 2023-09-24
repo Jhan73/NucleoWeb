@@ -11,8 +11,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { HomeComponent } from './pages/home/home.component';
 
 // mock
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { MockDataService } from './services/mock-data.service';
+//import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+//import { MockDataService } from './services/mock-data.service';
 import { SharedModule } from './shared/shared.module';
 import { ActivityComponent } from './shared/components/activity/activity.component';
 
@@ -29,7 +29,7 @@ import { ActivityComponent } from './shared/components/activity/activity.compone
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    InMemoryWebApiModule.forRoot(MockDataService)
+    //InMemoryWebApiModule.forRoot(MockDataService)
   ],
   exports: [
   ],

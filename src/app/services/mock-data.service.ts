@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
-import { InMemoryDbService } from 'angular-in-memory-web-api';
-import { User } from '../interfaces/user';
-
-
-@Injectable({
+import { InMemoryDbService } from 'angular-in-memory-web-api';@Injectable({
   providedIn: 'root'
 })
 export class MockDataService implements InMemoryDbService {
@@ -120,7 +116,6 @@ export class MockDataService implements InMemoryDbService {
           }
         ]
       }
-      
     ];
     const sistemas = {
       area: 'Sistemas'.toUpperCase(),
@@ -195,9 +190,7 @@ export class MockDataService implements InMemoryDbService {
           fecha: '25-12-2023'
         }
       ]
-    };
-
-    const pmo = {
+    };    const pmo = {
       area: 'pmo'.toUpperCase(),
       organigrama: "./assets/images/sky-organigrama.png",
       miembros: [
@@ -238,11 +231,6 @@ export class MockDataService implements InMemoryDbService {
       { id: 1, name: 'Jhan', email: 'jhan@gmail.com'},
       { id: 2, name: 'Pepelucho', email: 'pepelucho@gmail.com'},
       { id: 3, name: 'Juanita', email: 'juanita@gmail.com'},
-       
-    ];
-
-    return { areas, users, sistemas, industrial, pmo};
+    ];    return { areas, users, sistemas, industrial, pmo};
   }
-  constructor() { }
-
-}
+  constructor() { }}

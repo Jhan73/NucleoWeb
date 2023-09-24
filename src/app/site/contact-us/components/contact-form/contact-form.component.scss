@@ -7,6 +7,9 @@
         padding: 30px;
         background-color: var(--smain-color-7);
         border-radius: 10px;
+        input{
+            margin-bottom: 2px;
+        }
 
         .form-label {
             font-size: var(--text-font-size);
@@ -14,6 +17,7 @@
             margin: 0;
             color:  var(--main-color-1);
             font-size: bold;
+            margin-top: 15px;
         }
 
         .input-padron {
@@ -39,11 +43,15 @@
                 font-size: var(--text-font-size);
             } 
 
-            .radio {
+            .checkbox {
                 display: block;
                 margin: 5px;
                 font-size:18px;
             }           
+        }
+        .error-message{
+            color: var(--bs-danger);
+            font-size: 12px;
         }
 
         .enviar {
@@ -55,6 +63,12 @@
             padding: 5px 70px;
             border-radius: 30px;
             margin-bottom: 10px
+        }
+        .enviar:disabled{
+            background: var(--main-color-5);
+        }
+        .enviar:not(:disabled):active{
+            background: var(--main-color-2);
         }
     }
 }
