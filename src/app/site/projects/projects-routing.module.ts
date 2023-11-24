@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '', component: ProjectsComponent
   },
-  { path: 'activity', component: ActivityDetailsComponent },
+  { path: 'activity/id:', component: ActivityDetailsComponent },
 ];
 
 @NgModule({

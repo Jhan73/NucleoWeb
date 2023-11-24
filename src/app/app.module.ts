@@ -16,6 +16,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { ActivityComponent } from './shared/components/activity/activity.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

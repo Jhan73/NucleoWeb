@@ -12,6 +12,9 @@ const routes: Routes = [
   { 
     path: 'contactanos',
     loadChildren: () => import('./site/contact-us/contact-us.module').then(m => m.ContactUsModule)},
+  { 
+    path: 'sobre-nosotros',
+    loadChildren: () => import('./site/about-us/about-us.module').then(m => m.AboutUsModule)},
   {
     path: 'testimonios', 
     loadChildren: () => import('./site/testimonials/testimonials.module').then(m => m.TestimonialsModule)

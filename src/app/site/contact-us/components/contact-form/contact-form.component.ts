@@ -45,18 +45,19 @@ export class ContactFormComponent {
 
   onSubmit(){
     this.commonService.create(this.sendPath, {
-      //contacto_id: 100,
-      nombre: this.formGroup.value.name,
-      correo: this.formGroup.value.email,
-      telefono: this.formGroup.value.phone,
-      mensaje: this.formGroup.value.message,
+      name: this.formGroup.value.name,
+      email: this.formGroup.value.email,
+      telephone: this.formGroup.value.phone,
+      message: this.formGroup.value.message,
     }).subscribe({
       next: res => {
+        this.formGroup.reset()
         console.log('👨‍👨‍👧‍👧', res)
       },
       error: err => {
         console.log('🙍', err)
       }
+      
     })
   }
 
