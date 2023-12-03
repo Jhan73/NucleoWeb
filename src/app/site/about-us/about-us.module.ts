@@ -14,7 +14,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
   ],
   imports: [
     CommonModule,
-    AboutUsRoutingModule
+    AboutUsRoutingModule,
   ]
 })
 export class AboutUsModule { }

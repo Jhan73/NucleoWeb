@@ -14,7 +14,9 @@ import { HomeComponent } from './pages/home/home.component';
 //import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 //import { MockDataService } from './services/mock-data.service';
 import { SharedModule } from './shared/shared.module';
-import { ActivityComponent } from './shared/components/activity/activity.component';
+import { FooterModule } from './shared/components/footer/footer.module';
+import { MenuBarModule } from './shared/components/menu-bar/menu-bar.module';
+import { LayoutComponent } from './layouts/layout/layout.component';
 
 
 @NgModule({
@@ -22,14 +24,16 @@ import { ActivityComponent } from './shared/components/activity/activity.compone
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
+    LayoutComponent,
   ],
   imports: [
-    SharedModule,
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    FooterModule,
+    MenuBarModule,
     //InMemoryWebApiModule.forRoot(MockDataService)
   ],
   exports: [

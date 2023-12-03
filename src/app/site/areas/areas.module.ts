@@ -21,6 +21,7 @@ import { AreasComponent } from './pages/areas/areas.component';
 import { ActivitiesComponent } from './pages/modules/activities/activities.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ExtraActivityComponent } from './components/extra-activity/extra-activity.component';
+import { ActivityModule } from 'src/app/shared/components/activity/activity.module';
 
 
 
@@ -48,7 +49,7 @@ import { ExtraActivityComponent } from './components/extra-activity/extra-activi
   imports: [
     CommonModule,
     AreasRoutingModule,
-    SharedModule,
+    ActivityModule,
   ]
 })
 export class AreasModule { }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivityData } from 'src/app/models/activity-data.model';
 
 @Component({
   selector: 'app-activity',
@@ -7,6 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./activity.component.scss']
 })
 export class ActivityComponent {
+  activityData?: ActivityData;
+
+  @Input() set activity (activity: ActivityData){
+    this.activityData = activity
+  }
+
+
   constructor(private router: Router){
 
   }
